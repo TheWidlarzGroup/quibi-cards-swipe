@@ -5,8 +5,9 @@ import {FlatList} from 'react-native-gesture-handler';
 import Card from '../components/Card';
 import Header from '../components/Header';
 import {cardsList} from '../mockData/cards';
+import {theme} from '../theme/theme';
 
-const PADDING = 20;
+const PADDING = theme.padding.xLg;
 
 const HomeScreen = () => {
   const [cardHeight, setCardHeight] = useState(0);

@@ -1,5 +1,5 @@
 import React from 'react';
-import {SafeAreaView} from 'react-native';
+import {SafeAreaView, StyleSheet} from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import HomeScreen from '../screens/HomeScreen';
 import OtherScreen from '../screens/OtherScreen';
@@ -10,19 +10,13 @@ const Tab = createBottomTabNavigator();
 
 const BottomNavigator = () => {
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor: theme.colors.black}}>
+    <SafeAreaView style={styles.container}>
       <Tab.Navigator
-        screenOptions={{}}
         tabBarOptions={{
           tabStyle: {
             //
           },
-          style: {
-            backgroundColor: 'transparent',
-            elevation: 0,
-            shadowOpacity: 0,
-            borderTopColor: 'transparent',
-          },
+          style: styles.navigatorStyle,
           iconStyle: {
             //
           },
@@ -80,5 +74,18 @@ const BottomNavigator = () => {
     </SafeAreaView>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: theme.colors.black,
+  },
+  navigatorStyle: {
+    backgroundColor: 'transparent',
+    elevation: 0,
+    shadowOpacity: 0,
+    borderTopColor: 'transparent',
+  },
+});
 
 export default BottomNavigator;

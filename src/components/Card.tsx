@@ -11,13 +11,8 @@ interface Props {
 
 const Card: React.FC<Props> = ({bgUrl: uri, logo, title, description}) => {
   return (
-    <View style={StyleSheet.flatten([styles.container])}>
-      <Image
-        style={styles.image}
-        source={{
-          uri,
-        }}
-      />
+    <View style={styles.container}>
+      <Image style={styles.image} source={{uri}} />
       <View style={styles.cardContent}>
         <Image source={logo} resizeMode="contain" style={styles.logo} />
         <Text style={styles.title}>{title}</Text>
@@ -31,7 +26,7 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: theme.colors.black100,
     flex: 1,
-    borderRadius: 20,
+    borderRadius: theme.padding.xLg,
     overflow: 'hidden',
   },
   image: {
@@ -45,20 +40,20 @@ const styles = StyleSheet.create({
   cardContent: {
     position: 'absolute',
     bottom: 0,
-    padding: 20,
+    padding: theme.padding.xLg,
   },
   title: {
     color: theme.colors.white,
     opacity: 0.9,
     fontWeight: '700',
-    fontSize: 28,
-    marginVertical: 4,
+    fontSize: theme.fontSizes.xLarge,
+    marginVertical: theme.padding.sm,
   },
   description: {
     color: theme.colors.white,
     opacity: 0.6,
     fontWeight: '400',
-    fontSize: 14,
+    fontSize: theme.fontSizes.regular,
   },
 });
 

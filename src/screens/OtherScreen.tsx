@@ -1,11 +1,12 @@
 import React from 'react';
 import {SafeAreaView, View, Text, StyleSheet} from 'react-native';
+import {theme} from '../theme/theme';
 
 const OtherScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
       <View>
-        <Text>s</Text>
+        <Text>Other screen</Text>
       </View>
     </SafeAreaView>
   );
@@ -16,7 +17,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignContent: 'center',
-    backgroundColor: 'black',
+    backgroundColor: theme.colors.black,
   },
 });
 

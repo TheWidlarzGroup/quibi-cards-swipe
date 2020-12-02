@@ -12,13 +12,13 @@ const Header = () => {
 
 const styles = StyleSheet.create({
   container: {
-    paddingHorizontal: 20,
-    paddingVertical: 10,
+    paddingHorizontal: theme.padding.xLg,
+    paddingVertical: theme.padding.md,
   },
   title: {
     color: theme.colors.white,
     fontWeight: '700',
-    fontSize: 28,
+    fontSize: theme.fontSizes.large,
   },
 });
 
