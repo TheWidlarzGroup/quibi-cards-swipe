@@ -1,6 +1,6 @@
 # 📱 Recreating Quibi cards-swipe animation with React Native and Reanimated 🔥
 
-Part of an article, read the full guide on our blog [here](https://thewidlarzgroup.com/reacreating-quibi's-cards-swipe-animation-with-react-native-and-reanimated/)
+Part of an article, read the full guide on our blog [here](https://thewidlarzgroup.com/quibi-swipe-cards//)
 
 ## Run the app
 
