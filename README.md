@@ -17,4 +17,4 @@ Part of an article, read the full guide on our blog [here](https://thewidlarzgro
 
 - [x] recreated react-native animation:
 
-![Recreated app with react-native and reanimated](./final.gif)
+![Recreated app with react-native and reanimated](./final_2.gif)
