@@ -2,6 +2,9 @@
 
 Part of an article, read the full guide on our blog [here](https://thewidlarzgroup.com/quibi-swipe-cards//)
 
+
+:grey_exclamation: The article described the usage of reanimated v2 when it appeared. Currently, v3 is available. If you are using reanimated 2, check our [article](https://thewidlarzgroup.com/quibi-swipe-cards//), and if you are using v3, then make sure to familiarize yourself with the [documentation](https://docs.swmansion.com/react-native-reanimated/docs/)
+
 ## Run the app
 
 1. Clone the repo
